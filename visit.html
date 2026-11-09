@@ -28,6 +28,8 @@
     "@type": "MedicalClinic",
     "name": "AGR Medical Center",
     "telephone": "+91-88613-56060",
+    "isAcceptingNewPatients": true,
+    "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "opens": "08:00", "closes": "21:00"}],
     "address": {"@type": "PostalAddress", "streetAddress": "Lakshmi Ganapati Nagar, #25, off Kogilu Main Road, Yelahanka", "addressLocality": "Bengaluru", "addressRegion": "Karnataka", "postalCode": "560064", "addressCountry": "IN"},
     "hasMap": "https://www.google.com/maps?q=Lakshmi+Ganapati+Nagar%2C+25%2C+Kogilu+Main+Road%2C+Yelahanka%2C+Bengaluru%2C+Karnataka+560064"
   }
@@ -94,7 +96,7 @@
         <span class="eyebrow">AGR Medical Center, Yelahanka</span>
         <span class="display">Book an appointment.</span>
       </h1>
-      <p class="lead">Tell us who you&rsquo;d like to see and when suits you. The front desk will confirm a time by phone or WhatsApp.</p>
+      <p class="lead">Walk-ins are welcome during opening hours. To choose a time, tell us who you&rsquo;d like to see and the front desk will confirm by phone or WhatsApp.</p>
       <div class="ctas">
         <a class="btn" href="tel:+918861356060">Call +91 88613 56060</a>
         <a class="more" href="https://wa.me/918861356060">Message on WhatsApp</a>
@@ -178,7 +180,7 @@
           <dl>
             <div><dt>Address</dt><dd>Lakshmi Ganapati Nagar, #25, off Kogilu Main Road, Yelahanka, Bengaluru, Karnataka 560064</dd></div>
             <div><dt>Phone and WhatsApp</dt><dd><a href="tel:+918861356060">+91 88613 56060</a></dd></div>
-            <div><dt>Hours</dt><dd><span class="placeholder">[Opening hours]</span></dd></div>
+            <div><dt>Hours</dt><dd>Monday to Saturday, 8&nbsp;am to 9&nbsp;pm<br>Walk-ins welcome</dd></div>
           </dl>
           <div class="place__actions">
             <a class="btn" href="tel:+918861356060">Call the clinic</a>
@@ -211,8 +213,8 @@
       </div>
       <ol class="steps" data-reveal>
         <li>
-          <h3>Book</h3>
-          <p>By phone, WhatsApp or the form above. Tell us if you need a test, so it can be scheduled on the same visit.</p>
+          <h3>Book or walk in</h3>
+          <p>Book by phone, WhatsApp or the form above, or walk in any time during opening hours. Tell us if you need a test, so it can be done on the same visit.</p>
         </li>
         <li>
           <h3>Bring</h3>
@@ -294,6 +296,7 @@
       <div>
         <h2>Visit</h2>
         <address>AGR Medical Center<br>Lakshmi Ganapati Nagar, #25,<br>off Kogilu Main Road, Yelahanka,<br>Bengaluru, Karnataka 560064</address>
+        <p class="footer__hours">Monday to Saturday, 8&nbsp;am to 9&nbsp;pm<br>Walk-ins welcome</p>
         <ul class="footer__contact">
           <li><a href="tel:+918861356060">+91 88613 56060</a></li>
           <li><a href="https://wa.me/918861356060">WhatsApp</a></li>

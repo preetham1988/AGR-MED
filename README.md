@@ -39,8 +39,6 @@ root and leave the build command empty.
 
 ## Before launch
 
-- [ ] **Opening hours.** Replace `[Opening hours]` in `index.html` and `visit.html`. These are
-      marked on the page with a dotted orange underline.
 - [ ] **Domain.** Replace `YOUR-DOMAIN` in `sitemap.xml` and `robots.txt`. Canonical tags and an
       absolute `og:image` URL can then be added to each page.
 - [ ] **Qualifications.** Each doctor's page has an HTML comment where degrees, fellowships and the

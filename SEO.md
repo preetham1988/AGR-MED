@@ -39,7 +39,7 @@ describes what the doctors do instead of calling them the best. Let patients' re
      *Ophthalmologist*, *Eye care center*, *General practitioner*, *Medical laboratory*.
    - Use the exact address and phone from the website, and drop the map pin on the building
      itself.
-   - Add opening hours, a website link, and an appointment link (`/visit.html#book`).
+   - Add opening hours (Monday to Saturday, 8 am to 9 pm), mention that walk-ins are welcome, a website link, and an appointment link (`/visit.html#book`).
    - Add real photos: the building with its signboard, reception, the lab, the eye examination
      room and both doctors. Add more every month.
    - List services (PFT, allergy tests, cataract surgery and so on) and write the description in
@@ -67,7 +67,8 @@ describes what the doctors do instead of calling them the best. Let patients' re
 7. **Show credentials.** Add each doctor's degrees, fellowships and medical registration number to
    their page (there's a marked spot). Google holds health websites to a higher standard and looks
    for evidence of real expertise.
-8. **Opening hours** on the website, matching the Google profile.
+8. **Opening hours** (Monday to Saturday, 8 am to 9 pm) are on the website. Use exactly the same hours
+   on the Google profile and every listing.
 
 ## Every month
 
