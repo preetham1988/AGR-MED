@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Diagnostic Lab in Yelahanka: PFT, Sleep Study, Blood &amp; Allergy Tests</title>
-  <meta name="description" content="In-house lab in Yelahanka, North Bangalore: blood tests, pulmonary function tests, sleep studies, allergy tests, eye evaluations and health checks.">
+  <title>Diagnostic Lab in Yelahanka: Blood Tests, PFT, Allergy &amp; Eye Tests</title>
+  <meta name="description" content="In-house lab in Yelahanka, North Bangalore: blood tests, pulmonary function tests, allergy tests, eye evaluations and diabetic, hypertension and cardiopulmonary health checks.">
   <meta property="og:title" content="Tests and lab at AGR Medical Center, Yelahanka">
-  <meta property="og:description" content="Blood tests, breathing tests, sleep studies, allergy tests, eye evaluations and health checks, all in one clinic.">
+  <meta property="og:description" content="Blood tests, breathing tests, allergy tests, eye evaluations and health checks, all in one clinic.">
   <!-- @head -->
 <meta name="theme-color" content="#0d1a33">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
@@ -32,7 +32,6 @@
     "availableService": [
       {"@type": "MedicalTest", "name": "Blood investigations", "description": "Blood count, sugar, kidney, liver, thyroid and cholesterol tests."},
       {"@type": "MedicalTest", "name": "Pulmonary function test", "description": "Breathing test for asthma, COPD and breathlessness."},
-      {"@type": "MedicalTest", "name": "Sleep study", "description": "Overnight study for snoring and sleep apnoea."},
       {"@type": "MedicalTest", "name": "Allergy test", "description": "Identifies allergic triggers such as dust mites, pollen, mould, pets and foods."},
       {"@type": "MedicalTest", "name": "Eye evaluation", "description": "Vision, glasses prescription, eye pressure and dilated retina examination."},
       {"@type": "MedicalTest", "name": "Cardiopulmonary health check"},
@@ -87,7 +86,6 @@
     <ul class="subnav__links">
       <li><a href="#blood">Blood</a></li>
       <li><a href="#pft">Lung function</a></li>
-      <li><a href="#sleep-lab">Sleep lab</a></li>
       <li><a href="#eye">Eye</a></li>
       <li><a href="#allergy">Allergy</a></li>
       <li><a href="#health-checks">Health checks</a></li>
@@ -116,7 +114,7 @@
     <div class="wrap test-grid">
 
       <article class="test" id="blood" data-reveal>
-        <img src="assets/img/lab-tubes-wide-1200.webp" width="1200" height="675" loading="lazy" decoding="async" alt="Blood samples in orange-capped tubes">
+        <img src="assets/img/lab-tubes-wide-1200.webp" srcset="assets/img/lab-tubes-wide-1200.webp 1200w, assets/img/lab-tubes-wide-2000.webp 2000w" sizes="(max-width: 860px) 92vw, 45vw" width="1200" height="675" loading="lazy" decoding="async" alt="Blood samples in orange-capped tubes">
         <div class="test__body">
           <h2 class="tile__title tile__title--sm">Blood investigations</h2>
           <p class="test__for">For routine checks, diabetes, infections and long-term conditions.</p>
@@ -129,7 +127,7 @@
       </article>
 
       <article class="test" id="pft" data-reveal>
-        <img src="assets/img/pulse-oximeter-960.webp" width="960" height="640" loading="lazy" decoding="async" alt="A pulse oximeter clipped onto a patient's finger">
+        <img src="assets/img/cough-mask-960.webp" srcset="assets/img/cough-mask-960.webp 960w, assets/img/cough-mask-1800.webp 1800w" sizes="(max-width: 860px) 92vw, 45vw" width="960" height="640" loading="lazy" decoding="async" alt="A man in a suit and face mask coughing">
         <div class="test__body">
           <h2 class="tile__title tile__title--sm">Pulmonary function tests</h2>
           <p class="test__for">For asthma, COPD, chronic cough and breathlessness.</p>
@@ -137,19 +135,6 @@
           <div class="prep">
             <h3>Before the test</h3>
             <p>Don&rsquo;t smoke or eat a heavy meal for a few hours beforehand, and wear loose clothing. Ask us whether to take your inhalers that morning.</p>
-          </div>
-        </div>
-      </article>
-
-      <article class="test" id="sleep-lab" data-reveal>
-        <img src="assets/img/sleep-960.webp" width="960" height="640" loading="lazy" decoding="async" alt="A man asleep in a bed with white sheets">
-        <div class="test__body">
-          <h2 class="tile__title tile__title--sm">Sleep lab</h2>
-          <p class="test__for">For loud snoring, sleep apnoea, daytime sleepiness and disturbed sleep.</p>
-          <p>An overnight study that records your breathing, oxygen level, heart rate and sleep. It is the standard test for sleep apnoea.</p>
-          <div class="prep">
-            <h3>Before the test</h3>
-            <p>You&rsquo;ll arrive in the evening and go home the next morning. Bring nightwear and your usual medicines, and avoid caffeine after midday and alcohol that evening.</p>
           </div>
         </div>
       </article>
@@ -167,7 +152,7 @@
         </div>
       </article>
 
-      <article class="test" id="allergy" data-reveal>
+      <article class="test test--dusk" id="allergy" data-reveal>
         <div class="test__body">
           <h2 class="tile__title tile__title--sm">Allergy tests</h2>
           <p class="test__for">For asthma, rhinitis, hives and suspected food allergy.</p>
@@ -179,7 +164,8 @@
         </div>
       </article>
 
-      <article class="test" id="health-checks" data-reveal>
+      <article class="test test--wide" id="health-checks" data-reveal>
+        <img src="assets/img/glucometer-960.webp" srcset="assets/img/glucometer-960.webp 960w, assets/img/glucometer-1600.webp 1600w" sizes="(max-width: 860px) 92vw, 45vw" width="960" height="720" loading="lazy" decoding="async" alt="A patient checking blood sugar with a glucometer">
         <div class="test__body">
           <h2 class="tile__title tile__title--sm">Health checks</h2>
           <p class="test__for">For a baseline, a regular review, or when something doesn&rsquo;t feel right.</p>
@@ -239,7 +225,6 @@
         <ul>
           <li><a href="diagnostics.html#blood">Blood investigations</a></li>
           <li><a href="diagnostics.html#pft">Pulmonary function tests</a></li>
-          <li><a href="diagnostics.html#sleep-lab">Sleep lab</a></li>
           <li><a href="diagnostics.html#allergy">Allergy tests</a></li>
           <li><a href="diagnostics.html#eye">Eye evaluation</a></li>
           <li><a href="diagnostics.html#health-checks">Health checks</a></li>
