@@ -1,29 +1,18 @@
-/* AGR Medical Center: header state, mobile menu, appointment request. */
+/* AGR Medical Center: mobile menu, scroll reveal, appointment request. */
 
-// WhatsApp number for appointment requests, digits only with country code.
-// Replace with the clinic's real number before launch.
-var CLINIC_WHATSAPP = '918000000000';
+// WhatsApp number for appointment requests: digits only, with country code.
+var CLINIC_WHATSAPP = '918861356060';
 
 (function() {
   'use strict';
 
-  /* Header shadow once the page scrolls */
-  var header = document.querySelector('.site-header');
-  if (header) {
-    var onScroll = function() {
-      header.classList.toggle('is-scrolled', window.scrollY > 8);
-    };
-    onScroll();
-    window.addEventListener('scroll', onScroll, { passive: true });
-  }
-
   /* Mobile menu */
-  var toggle = document.querySelector('.menu-toggle');
-  var menu = document.getElementById('mobile-menu');
-  if (toggle && menu) {
+  var btn = document.querySelector('.menu-btn');
+  var menu = document.getElementById('menu');
+  if (btn && menu) {
     var setOpen = function(open) {
-      toggle.setAttribute('aria-expanded', String(open));
-      toggle.textContent = open ? 'Close' : 'Menu';
+      btn.setAttribute('aria-expanded', String(open));
+      btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
       menu.hidden = !open;
       document.body.classList.toggle('menu-open', open);
       if (open) {
@@ -31,20 +20,43 @@ var CLINIC_WHATSAPP = '918000000000';
         if (first) first.focus();
       }
     };
-    toggle.addEventListener('click', function() {
-      setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+    btn.addEventListener('click', function() {
+      setOpen(btn.getAttribute('aria-expanded') !== 'true');
     });
     document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+      if (e.key === 'Escape' && btn.getAttribute('aria-expanded') === 'true') {
         setOpen(false);
-        toggle.focus();
+        btn.focus();
       }
     });
     menu.addEventListener('click', function(e) {
       if (e.target.closest('a')) setOpen(false);
     });
-    window.matchMedia('(min-width: 961px)').addEventListener('change', function(mq) {
+    window.matchMedia('(min-width: 861px)').addEventListener('change', function(mq) {
       if (mq.matches) setOpen(false);
+    });
+  }
+
+  /* Reveal sections as they scroll into view */
+  var reveal = document.querySelectorAll('[data-reveal]');
+  if ('IntersectionObserver' in window && reveal.length) {
+    var io = new IntersectionObserver(
+      function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-in');
+            io.unobserve(entry.target);
+          }
+        });
+      },
+      { rootMargin: '0px 0px -8% 0px', threshold: 0.08 }
+    );
+    reveal.forEach(function(el) {
+      io.observe(el);
+    });
+  } else {
+    reveal.forEach(function(el) {
+      el.classList.add('is-in');
     });
   }
 

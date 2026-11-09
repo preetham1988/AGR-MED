@@ -1,15 +1,28 @@
 # AGR Medical Center website
 
-A static, five-page website for AGR Medical Center, Bangalore. It's plain HTML, CSS and a small
-script, with no build step and no dependencies.
+A static, five-page website for AGR Medical Center, Lakshmi Ganapati Nagar, off Kogilu Main Road,
+Yelahanka, Bengaluru. It's plain HTML, CSS and a small script, with no build step and no
+dependencies.
 
-| Page                      | What it covers                                                               |
-| ------------------------- | ---------------------------------------------------------------------------- |
-| `index.html`              | Home: the two doctors, what the clinic treats, the lab, visiting consultants |
-| `medicine.html`           | General medicine, lungs and sleep, with Dr. Gangi Reddy TK                    |
-| `eye-care.html`           | Eye examinations, cataract, retina and vitreous, with Dr. Archana M           |
-| `diagnostics.html`        | Every test, who it's for and how to prepare                                  |
-| `visit.html`              | Appointment request form (sends via WhatsApp), first-visit steps, contact    |
+| Page               | What it covers                                                                  |
+| ------------------ | ------------------------------------------------------------------------------- |
+| `index.html`       | Home: both doctors, the in-house lab, the two practices, location and map       |
+| `medicine.html`    | General medicine, lungs and sleep with Dr. Gangi Reddy TK, plus FAQs            |
+| `eye-care.html`    | Eye examinations, cataract, retina and vitreous with Dr. Archana M, plus FAQs   |
+| `diagnostics.html` | Every test, who it's for and how to prepare                                     |
+| `visit.html`       | Appointment request form (sends via WhatsApp), map, first-visit steps          |
+
+## Design
+
+Inspired by Apple's design principles: one clear message per section, large type, generous space,
+rounded tiles and very little decoration.
+
+- **Colours:** midnight navy `#0D1A33`, dusk blue `#8FB4E3`, and midnight orange `#C2531A` for
+  buttons and small highlights. They're defined as variables at the top of `assets/css/site.css`.
+- **Type:** Apple devices use the system font (SF Pro). Everyone else gets Inter, which is
+  self-hosted.
+- **Doctor portraits:** cut out from the supplied photos and placed on a shared dusk-blue
+  background.
 
 ## Preview locally
 
@@ -20,40 +33,38 @@ python3 -m http.server 8080
 
 ## Deploy
 
-Any static host works: Netlify, Vercel, Cloudflare Pages or GitHub Pages. The site is at the root of
-this repository, so leave the build command empty and publish the root directory.
+Any static host works: GitHub Pages, Netlify, Vercel or Cloudflare Pages. Publish the repository
+root and leave the build command empty.
 
 ## Before launch
 
-Placeholders are marked in the pages with a dotted orange underline. Search and replace them in
-every `.html` file:
-
-- [ ] **Phone and WhatsApp.** Replace `+91 80 0000 0000`, `+918000000000` and `918000000000`.
-      Also set `CLINIC_WHATSAPP` at the top of `assets/js/site.js`. The booking form sends requests
-      to that number.
-- [ ] **Address.** Replace `[Street address], [Area]` and `5600XX`, including the structured data
-      block in the `<head>` of `index.html`.
-- [ ] **Opening hours.** Replace `[Monday to Saturday, opening hours]`.
-- [ ] **Directions link.** Swap the Google Maps search link for the clinic's own Maps listing URL.
-- [ ] **Qualifications.** Each doctor's page has an HTML comment under the portrait where degrees,
-      fellowships and registration numbers can go.
-- [ ] **Portraits.** Dr. Archana M's photo shows another hospital's logo on the coat. Replace it with a
-      new photo, and use portraits at least 1000 px wide for both doctors so they stay sharp on
-      high-resolution screens. Keep the same file names in `assets/img/`.
-- [ ] **Domain.** Once the domain is known, make `og:image` an absolute URL and add a
-      `<link rel="canonical">` to each page.
+- [ ] **Opening hours.** Replace `[Opening hours]` in `index.html` and `visit.html`. These are
+      marked on the page with a dotted orange underline.
+- [ ] **Domain.** Replace `YOUR-DOMAIN` in `sitemap.xml` and `robots.txt`. Canonical tags and an
+      absolute `og:image` URL can then be added to each page.
+- [ ] **Qualifications.** Each doctor's page has an HTML comment where degrees, fellowships and the
+      registration number go.
+- [ ] **Portraits.** The supplied photos are small, so Dr. Archana M's portrait looks soft. New
+      photos at least 1500 px wide would sharpen both.
+- [ ] **WhatsApp.** The booking form sends to `918861356060`, set by `CLINIC_WHATSAPP` at the top
+      of `assets/js/site.js`. Change it there if appointments should go to a different number.
 - [ ] **Medical copy.** Have both doctors read their pages and the test preparation notes.
+
+See `SEO.md` for the search-ranking plan: Google Business Profile, reviews, listings and content.
 
 ## Structure
 
 ```
-assets/css/site.css   All styles. Colours and type are defined as variables at the top.
-assets/js/site.js     Header shadow, mobile menu, booking form → WhatsApp.
-assets/fonts/         Newsreader and Albert Sans (self-hosted, SIL Open Font License).
-assets/img/           Optimised WebP photos, logo mark (SVG), favicon, social image.
+assets/css/site.css   All styles.
+assets/js/site.js     Mobile menu, scroll reveal, booking form → WhatsApp.
+assets/fonts/         Inter (SIL Open Font License).
+assets/img/           WebP photos, doctor cut-outs, logo mark, favicon, social image.
+sitemap.xml           For Google Search Console (fill in the domain).
+robots.txt
 ```
 
-The header and footer are repeated in each page. If you change one, change it in all five files.
+The navigation, footer and shared `<head>` tags are repeated in each page. If you change one, change
+it in all five files.
 
 ## Photography
 
@@ -68,5 +79,4 @@ Clinical photos are from Pexels and are free for commercial use under the
 - Blood samples: [pexels.com/photo/6622518](https://www.pexels.com/photo/blood-samples-in-test-tubes-6622518/) (Charlie-Helen Robinson)
 - Blood pressure: [pexels.com/photo/7108344](https://www.pexels.com/photo/a-healthcare-worker-measuring-a-patient-s-blood-pressure-using-a-sphygmomanometer-7108344/) (Pavel Danilyuk)
 - Pulse oximeter: [pexels.com/photo/7580249](https://www.pexels.com/photo/close-up-of-doctor-putting-a-fingertip-pulse-oximeter-on-a-patients-finger-7580249/)
-- Blood sugar test: [pexels.com/photo/6823512](https://www.pexels.com/photo/a-person-s-finger-with-blood-6823512/)
 - Sleep: [pexels.com/photo/7641482](https://www.pexels.com/photo/man-lying-on-white-bed-7641482/) (MART PRODUCTION)
