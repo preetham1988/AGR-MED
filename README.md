@@ -1,13 +1,14 @@
 # AGR Medical Center website
 
-A static, five-page website for AGR Medical Center, Lakshmi Ganapati Nagar, off Kogilu Main Road,
+A static, six-page website for AGR Medical Center, Lakshmi Ganapati Nagar, off Kogilu Main Road,
 Yelahanka, Bengaluru. It's plain HTML, CSS and a small script, with no build step and no
 dependencies.
 
 | Page               | What it covers                                                                  |
 | ------------------ | ------------------------------------------------------------------------------- |
 | `index.html`       | Home: dusk-blue landing with both doctors, the two practices, the lab, location |
-| `medicine.html`    | General medicine, lungs and sleep with Dr. Gangi Reddy TK, plus FAQs            |
+| `general-medicine.html` | General medicine, diabetes and blood pressure, health checks, with Dr. Gangi Reddy TK |
+| `lungs-sleep.html` | Pulmonology, interventional pulmonology and sleep medicine, with Dr. Gangi Reddy TK |
 | `eye-care.html`    | Eye examinations, cataract, retina and vitreous with Dr. Archana M, plus FAQs   |
 | `diagnostics.html` | Every test, who it's for and how to prepare                                     |
 | `visit.html`       | Appointment request form (sends via WhatsApp), map, first-visit steps          |
@@ -66,7 +67,7 @@ robots.txt
 ```
 
 The navigation, footer and shared `<head>` tags are repeated in each page. If you change one, change
-it in all five files.
+it in every page. `medicine.html` is only a redirect to `lungs-sleep.html` for old links.
 
 ## Photography
 

@@ -232,6 +232,7 @@ ol {
 .nav__links a {
   display: block;
   padding: 8px 0;
+  white-space: nowrap;
   font-size: 13.5px;
   color: rgba(244, 247, 252, 0.82);
   transition: color 0.2s var(--ease);
@@ -1741,7 +1742,7 @@ fieldset.field {
 
 .footer__cols {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 24px;
   padding: 24px 0;
 }
@@ -1905,7 +1906,7 @@ fieldset.field {
     grid-template-columns: 1fr;
   }
   .doc-split {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     padding: 0 24px;
     text-align: center;
   }

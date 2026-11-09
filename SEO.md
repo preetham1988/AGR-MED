@@ -18,7 +18,8 @@ describes what the doctors do instead of calling them the best. Let patients' re
 ## Already done on the website
 
 - [x] Each page has a title and description aimed at a specific search, for example
-      "Pulmonologist & General Physician in Yelahanka, North Bangalore".
+      "General Physician in Yelahanka" and "Pulmonologist & Chest Specialist in Yelahanka".
+      General medicine and lungs have separate pages so each can rank for its own searches.
 - [x] Each page's main heading names the specialty and the location.
 - [x] The name, address and phone are identical on every page.
 - [x] Structured data tells Google this is a medical clinic with two physicians, its address,
@@ -89,7 +90,8 @@ describes what the doctors do instead of calling them the best. Let patients' re
 | Page             | Target searches                                                                              |
 | ---------------- | -------------------------------------------------------------------------------------------- |
 | Home             | general physician in Yelahanka, clinic near Kogilu, doctor in North Bangalore                |
-| Medicine & lungs | pulmonologist in Yelahanka / North Bangalore, chest specialist Yelahanka, sleep apnoea doctor, diabetes doctor Yelahanka |
+| General medicine | general physician in Yelahanka, diabetes doctor Yelahanka, BP doctor North Bangalore, fever doctor near Kogilu |
+| Lungs & sleep    | pulmonologist in Yelahanka / North Bangalore, chest specialist Yelahanka, asthma doctor, sleep apnoea doctor |
 | Eye care         | eye specialist / ophthalmologist in Yelahanka, retina specialist North Bangalore, cataract surgery Yelahanka |
 | Tests & lab      | PFT test Yelahanka, allergy test Yelahanka, blood test lab Yelahanka, diabetes check-up Yelahanka |
 | Visit            | AGR Medical Center Yelahanka, clinic on Kogilu Main Road                                     |
