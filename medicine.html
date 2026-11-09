@@ -38,8 +38,7 @@
         "availableService": [
           {"@type": "MedicalTherapy", "name": "Asthma and COPD care"},
           {"@type": "MedicalTherapy", "name": "Sleep apnoea care"},
-          {"@type": "MedicalTest", "name": "Pulmonary function test"},
-          {"@type": "MedicalTest", "name": "Sleep study"}
+          {"@type": "MedicalTest", "name": "Pulmonary function test"}
         ]
       },
       {
@@ -48,7 +47,7 @@
           {"@type": "Question", "name": "When should I see a pulmonologist?", "acceptedAnswer": {"@type": "Answer", "text": "See a pulmonologist for a cough lasting more than three weeks, breathlessness that limits what you do, wheezing, an abnormal chest X-ray or CT scan, or loud snoring with daytime sleepiness. Coughing up blood or sudden severe breathlessness needs urgent care."}},
           {"@type": "Question", "name": "Can I see a general physician and a pulmonologist in one visit?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Dr. Gangi Reddy TK is both a physician and a pulmonologist, so everyday health, diabetes and blood pressure can be reviewed in the same consultation as a lung or sleep problem."}},
           {"@type": "Question", "name": "What is a pulmonary function test?", "acceptedAnswer": {"@type": "Answer", "text": "A breathing test that measures how much air your lungs hold and how quickly you can breathe out. It is used to diagnose and monitor asthma, COPD and other causes of breathlessness, and is done at the clinic."}},
-          {"@type": "Question", "name": "How is sleep apnoea diagnosed?", "acceptedAnswer": {"@type": "Answer", "text": "With a sleep study, which records breathing, oxygen levels, heart rate and sleep overnight. AGR Medical Center has its own sleep lab."}}
+          {"@type": "Question", "name": "How is sleep apnoea diagnosed?", "acceptedAnswer": {"@type": "Answer", "text": "Usually with a sleep study, which records breathing, oxygen levels and sleep overnight. Dr. Gangi Reddy TK will advise whether you need one and which type suits you."}}
         ]
       }
     ]
@@ -140,7 +139,7 @@
   <section class="section" id="general" aria-labelledby="general-title">
     <div class="wrap block">
       <figure class="block__media" data-reveal>
-        <img src="assets/img/blood-pressure-960.webp" srcset="assets/img/blood-pressure-960.webp 960w, assets/img/blood-pressure-1800.webp 1800w" sizes="(max-width: 860px) 92vw, 45vw" width="960" height="641" loading="lazy" decoding="async" alt="A patient's blood pressure being measured with a cuff and stethoscope">
+        <img src="assets/img/bp-check-960.webp" srcset="assets/img/bp-check-960.webp 960w, assets/img/bp-check-1800.webp 1800w" sizes="(max-width: 860px) 92vw, 45vw" width="960" height="640" loading="lazy" decoding="async" alt="A doctor measuring a patient's blood pressure in a clinic">
       </figure>
       <div class="block__body" data-reveal>
         <span class="eyebrow">General medicine</span>
@@ -164,7 +163,7 @@
   <section class="section section--tint" id="lungs" aria-labelledby="lungs-title">
     <div class="wrap block block--flip">
       <figure class="block__media" data-reveal>
-        <img src="assets/img/lungs-xray-720.webp" srcset="assets/img/lungs-xray-720.webp 720w, assets/img/lungs-xray-1280.webp 1280w" sizes="(max-width: 860px) 92vw, 45vw" width="720" height="900" loading="lazy" decoding="async" alt="A doctor in gloves holding up a chest X-ray showing both lungs">
+        <img src="assets/img/cough-720.webp" srcset="assets/img/cough-720.webp 720w, assets/img/cough-1280.webp 1280w" sizes="(max-width: 860px) 92vw, 45vw" width="720" height="900" loading="lazy" decoding="async" alt="A man wrapped in a shawl, coughing into his hand">
       </figure>
       <div class="block__body" data-reveal>
         <span class="eyebrow">Pulmonology</span>
@@ -193,13 +192,7 @@
 
   <section class="section section--dark" id="sleep" aria-labelledby="sleep-title">
     <div class="wrap block">
-      <figure class="block__media" data-reveal>
-        <img src="assets/img/sleep-960.webp" srcset="assets/img/sleep-960.webp 960w, assets/img/sleep-1800.webp 1800w" sizes="(max-width: 860px) 92vw, 45vw" width="960" height="640" loading="lazy" decoding="async" alt="A man asleep in a bed with white sheets">
-      </figure>
-      <div class="block__body on-dark" data-reveal>
-        <span class="eyebrow">Sleep medicine</span>
-        <h2 class="headline-sm" id="sleep-title">Poor sleep is often a medical problem.</h2>
-        <p>Obstructive sleep apnoea, where breathing repeatedly stops and starts during the night, is common, often missed and treatable. Left alone it raises blood pressure and makes diabetes and heart disease harder to control.</p>
+      <div class="block__media panel" data-reveal>
         <h3>Consider a sleep assessment if</h3>
         <ul class="checklist">
           <li>You snore loudly most nights</li>
@@ -208,7 +201,12 @@
           <li>You doze off during the day, including at the wheel</li>
           <li>You&rsquo;ve struggled to fall or stay asleep for months</li>
         </ul>
-        <p class="after">An overnight study in the clinic&rsquo;s sleep lab shows what is happening while you sleep, and treatment is planned around the result.</p>
+      </div>
+      <div class="block__body on-dark" data-reveal>
+        <span class="eyebrow">Sleep medicine</span>
+        <h2 class="headline-sm" id="sleep-title">Poor sleep is often a medical problem.</h2>
+        <p>Obstructive sleep apnoea, where breathing repeatedly stops and starts during the night, is common, often missed and treatable. Left alone it raises blood pressure and makes diabetes and heart disease harder to control.</p>
+        <p>Sleep medicine is one of Dr.&nbsp;Gangi Reddy&nbsp;TK&rsquo;s special interests. The consultation looks at your sleep, breathing and overall health together, and you&rsquo;ll be advised on whether a sleep study is needed and on the right treatment.</p>
       </div>
     </div>
   </section>
@@ -220,34 +218,24 @@
         <h2 class="headline" id="tests-title">Done here. Read by your doctor.</h2>
       </div>
       <div class="bento">
-        <article class="tile tile--pad" data-reveal>
+        <article class="tile tile--pad span-3" data-reveal>
           <h3 class="tile__title tile__title--sm">Pulmonary function tests</h3>
           <p class="tile__text">Asthma, COPD and breathlessness.</p>
           <div class="tile__links"><a class="more" href="diagnostics.html#pft">How it works</a></div>
         </article>
-        <article class="tile tile--pad" data-reveal>
-          <h3 class="tile__title tile__title--sm">Sleep study</h3>
-          <p class="tile__text">Snoring, sleep apnoea and insomnia.</p>
-          <div class="tile__links"><a class="more" href="diagnostics.html#sleep-lab">How it works</a></div>
-        </article>
-        <article class="tile tile--pad" data-reveal>
+        <article class="tile tile--pad span-3" data-reveal>
           <h3 class="tile__title tile__title--sm">Allergy tests</h3>
           <p class="tile__text">Asthma, rhinitis and other allergies.</p>
           <div class="tile__links"><a class="more" href="diagnostics.html#allergy">How it works</a></div>
         </article>
-        <article class="tile tile--pad" data-reveal>
+        <article class="tile tile--pad span-3" data-reveal>
           <h3 class="tile__title tile__title--sm">Blood investigations</h3>
           <p class="tile__text">Diabetes, infection and routine checks.</p>
           <div class="tile__links"><a class="more" href="diagnostics.html#blood">How it works</a></div>
         </article>
-        <article class="tile tile--pad" data-reveal>
-          <h3 class="tile__title tile__title--sm">Cardiopulmonary check</h3>
-          <p class="tile__text">Heart and lung health.</p>
-          <div class="tile__links"><a class="more" href="diagnostics.html#health-checks">How it works</a></div>
-        </article>
-        <article class="tile tile--pad" data-reveal>
-          <h3 class="tile__title tile__title--sm">Diabetes and BP checks</h3>
-          <p class="tile__text">Regular reviews of long-term conditions.</p>
+        <article class="tile tile--pad span-3" data-reveal>
+          <h3 class="tile__title tile__title--sm">Health checks</h3>
+          <p class="tile__text">Cardiopulmonary, diabetic and hypertensive.</p>
           <div class="tile__links"><a class="more" href="diagnostics.html#health-checks">How it works</a></div>
         </article>
       </div>
@@ -274,7 +262,7 @@
         </details>
         <details>
           <summary>How is sleep apnoea diagnosed?</summary>
-          <p>With a sleep study, which records breathing, oxygen levels, heart rate and sleep overnight. AGR Medical Center has its own sleep lab.</p>
+          <p>Usually with a sleep study, which records breathing, oxygen levels and sleep overnight. Dr.&nbsp;Gangi Reddy&nbsp;TK will advise whether you need one and which type suits you.</p>
         </details>
       </div>
     </div>
@@ -324,7 +312,6 @@
         <ul>
           <li><a href="diagnostics.html#blood">Blood investigations</a></li>
           <li><a href="diagnostics.html#pft">Pulmonary function tests</a></li>
-          <li><a href="diagnostics.html#sleep-lab">Sleep lab</a></li>
           <li><a href="diagnostics.html#allergy">Allergy tests</a></li>
           <li><a href="diagnostics.html#eye">Eye evaluation</a></li>
           <li><a href="diagnostics.html#health-checks">Health checks</a></li>

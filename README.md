@@ -6,7 +6,7 @@ dependencies.
 
 | Page               | What it covers                                                                  |
 | ------------------ | ------------------------------------------------------------------------------- |
-| `index.html`       | Home: both doctors, the in-house lab, the two practices, location and map       |
+| `index.html`       | Home: dusk-blue landing with both doctors, the two practices, the lab, location |
 | `medicine.html`    | General medicine, lungs and sleep with Dr. Gangi Reddy TK, plus FAQs            |
 | `eye-care.html`    | Eye examinations, cataract, retina and vitreous with Dr. Archana M, plus FAQs   |
 | `diagnostics.html` | Every test, who it's for and how to prepare                                     |
@@ -44,8 +44,10 @@ root and leave the build command empty.
       absolute `og:image` URL can then be added to each page.
 - [ ] **Qualifications.** Each doctor's page has an HTML comment where degrees, fellowships and the
       registration number go.
-- [ ] **Portraits.** The supplied photos are small, so Dr. Archana M's portrait looks soft. New
-      photos at least 1500 px wide would sharpen both.
+- [ ] **Portraits.** The supplied photos were small and have been upscaled. New professional
+      photos at least 1500 px wide would look sharper still.
+- [ ] **Clinic photos.** Real photos of the clinic, lab and patients (with consent) will always look
+      better than stock. Swap them into `assets/img/` using the same file names.
 - [ ] **WhatsApp.** The booking form sends to `918861356060`, set by `CLINIC_WHATSAPP` at the top
       of `assets/js/site.js`. Change it there if appointments should go to a different number.
 - [ ] **Medical copy.** Have both doctors read their pages and the test preparation notes.
@@ -68,15 +70,20 @@ it in all five files.
 
 ## Photography
 
-Clinical photos are from Pexels and are free for commercial use under the
-[Pexels license](https://www.pexels.com/license/). Attribution isn't required, but the sources are:
+Photos are graded to one consistent look. Clinical photos are from Pexels and are free for commercial
+use under the [Pexels license](https://www.pexels.com/license/). Attribution isn't required, but the
+sources are:
 
+- Blood pressure check: [pexels.com/photo/14558560](https://www.pexels.com/photo/a-doctor-taking-a-patient-s-blood-pressure-14558560/)
+- Cough (shawl): [pexels.com/photo/8817795](https://www.pexels.com/photo/close-up-photo-of-a-sick-man-covering-his-mouth-8817795/)
+- Cough (face mask): [pexels.com/photo/11899610](https://www.pexels.com/photo/a-man-in-black-suit-jacket-wearing-eyeglasses-11899610/) (Towfiqu Barbhuiya)
+- Glucometer: [pexels.com/photo/6941101](https://www.pexels.com/photo/person-holding-a-glucose-meter-6941101/) (background recoloured to dusk blue)
 - Chest X-ray: [pexels.com/photo/4225923](https://www.pexels.com/photo/doctor-looking-at-scans-of-lungs-4225923/) (Anna Shvets)
 - Eye close-up: [pexels.com/photo/34369399](https://www.pexels.com/photo/close-up-of-a-human-eye-with-rich-brown-iris-34369399/) (Nitin Yadav)
-- Slit lamp exam: [pexels.com/photo/6749708](https://www.pexels.com/photo/a-man-having-eye-examination-6749708/) (Antoni Shkraba)
+- Slit lamp: [pexels.com/photo/6749702](https://www.pexels.com/photo/an-ophthalmoscope-and-an-eye-examination-equipment-6749702/)
 - Eye surgery: [pexels.com/photo/31000573](https://www.pexels.com/photo/professional-eye-surgery-in-new-delhi-hospital-31000573/)
 - Phoropter: [pexels.com/photo/5752309](https://www.pexels.com/photo/optical-equipment-for-testing-vision-5752309/) (Ksenia Chernaya)
 - Blood samples: [pexels.com/photo/6622518](https://www.pexels.com/photo/blood-samples-in-test-tubes-6622518/) (Charlie-Helen Robinson)
-- Blood pressure: [pexels.com/photo/7108344](https://www.pexels.com/photo/a-healthcare-worker-measuring-a-patient-s-blood-pressure-using-a-sphygmomanometer-7108344/) (Pavel Danilyuk)
-- Pulse oximeter: [pexels.com/photo/7580249](https://www.pexels.com/photo/close-up-of-doctor-putting-a-fingertip-pulse-oximeter-on-a-patients-finger-7580249/)
-- Sleep: [pexels.com/photo/7641482](https://www.pexels.com/photo/man-lying-on-white-bed-7641482/) (MART PRODUCTION)
+
+Doctor portraits were sharpened with an AI super-resolution model (EDSR) and cut out onto dusk blue.
+New professional photos, at least 1500 px wide, would still be better.

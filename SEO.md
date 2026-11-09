@@ -35,14 +35,13 @@ describes what the doctors do instead of calling them the best. Let patients' re
 1. **Google Business Profile.** This is the single biggest factor for Maps and "near me" results.
    - Create or claim "AGR Medical Center" at business.google.com.
    - Primary category: *Medical clinic*. Add secondary categories: *Pulmonologist*,
-     *Ophthalmologist*, *Eye care center*, *General practitioner*, *Medical laboratory*,
-     *Sleep clinic*.
+     *Ophthalmologist*, *Eye care center*, *General practitioner*, *Medical laboratory*.
    - Use the exact address and phone from the website, and drop the map pin on the building
      itself.
    - Add opening hours, a website link, and an appointment link (`/visit.html#book`).
    - Add real photos: the building with its signboard, reception, the lab, the eye examination
      room and both doctors. Add more every month.
-   - List services (PFT, sleep study, cataract surgery and so on) and write the description in
+   - List services (PFT, allergy tests, cataract surgery and so on) and write the description in
      plain words that name the specialties and Yelahanka.
    - Each doctor can also have their own practitioner profile at the same address, for example
      "Dr. Gangi Reddy TK – Pulmonologist".
@@ -90,9 +89,9 @@ describes what the doctors do instead of calling them the best. Let patients' re
 | Page             | Target searches                                                                              |
 | ---------------- | -------------------------------------------------------------------------------------------- |
 | Home             | general physician in Yelahanka, clinic near Kogilu, doctor in North Bangalore                |
-| Medicine & lungs | pulmonologist in Yelahanka / North Bangalore, chest specialist Yelahanka, sleep apnoea doctor |
+| Medicine & lungs | pulmonologist in Yelahanka / North Bangalore, chest specialist Yelahanka, sleep apnoea doctor, diabetes doctor Yelahanka |
 | Eye care         | eye specialist / ophthalmologist in Yelahanka, retina specialist North Bangalore, cataract surgery Yelahanka |
-| Tests & lab      | PFT test Yelahanka, sleep study North Bangalore, allergy test Yelahanka, blood test lab Yelahanka |
+| Tests & lab      | PFT test Yelahanka, allergy test Yelahanka, blood test lab Yelahanka, diabetes check-up Yelahanka |
 | Visit            | AGR Medical Center Yelahanka, clinic on Kogilu Main Road                                     |
 
 Expect the Google Business Profile and reviews to show results within weeks. Organic rankings for
